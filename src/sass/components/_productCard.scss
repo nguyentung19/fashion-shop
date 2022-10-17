@@ -1,0 +1,49 @@
+.product-card {
+  padding: 20px 0;
+  &__images {
+    position: relative;
+    margin-bottom: 10px;
+    &-01 {
+      transform: scale(1);
+      transition: transform 0.5s ease;
+    }
+
+    &-02 {
+      position: absolute;
+      top: 0;
+      transition: transform 0.5s ease;
+      transform: scale(0);
+    }
+
+    &:hover &-01 {
+        transform: scale(0);
+    }
+
+    &:hover &-02 {
+        transform: scale(1);
+    }
+  }
+  &__info {
+    text-align: center;
+  }
+  &__title {
+      color: grey;
+      font-weight: normal;
+      margin-bottom: 5px;
+  }
+  &__price {
+      margin-bottom: 5px;
+      &-discount {
+          color: black;
+          font-size: 1.8rem;
+          font-weight: bold;
+          margin-right: 10px;
+      }
+      &-undiscount {
+          color: grey;
+      }
+  }
+  &__button {
+    text-align: center;
+  }
+}
