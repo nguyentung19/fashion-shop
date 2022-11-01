@@ -1,0 +1,35 @@
+.footer {
+  box-shadow: $box-shadow;
+  padding-top: 60px;
+  &__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  &__content {
+    font-size: 1.6rem;
+    p {
+      margin-bottom: 10px;
+    }
+  }
+  &__link {
+    color: black;
+    transition: color 0.3s ease;
+    &:hover {
+      color: $main-color;
+    }
+  }
+  &__logo {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+    &__item {
+      margin-bottom: 20px;
+    }
+    &__title {
+      margin-bottom: 15px;
+    }
+  }
+}

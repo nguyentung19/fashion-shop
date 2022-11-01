@@ -1,0 +1,37 @@
+.policy-card {
+    padding: 30px 0;
+    &__item {
+        display: flex;
+        align-items: center;
+        box-shadow: $box-shadow;
+        padding: 10px;
+        padding-left: 0;
+        transition: transform .5s ease;
+    }
+
+    &__item:hover {
+        transform: translateY(-15%);
+    }
+
+    &__icon {
+        padding: 10px 20px;
+        font-size: 3rem;
+        color: $main-color;
+    }
+
+    &__content {
+        padding-left: 10px;
+    }
+
+    &__title {
+        color: black;
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 1.3rem;
+    }
+
+    &__description {
+        color: grey;
+        font-size: 1.2;
+    }
+}
